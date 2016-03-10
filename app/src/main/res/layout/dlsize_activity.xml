@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dlsize_activity"
+        android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:clickable="false"
+        android:elevation="4dp"
+        android:padding="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <ScrollView
+            android:id="@+id/dlsize_container_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:elevation="4dp">
+            <GridLayout
+                android:id="@+id/dlsize_GridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:alignmentMode="alignBounds"
+                android:columnCount="3"
+                android:columnOrderPreserved="false"
+                android:orientation="vertical"
+                android:useDefaultMargins="true">
+                <TextView
+                    android:layout_column="0"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="start"
+                    android:layout_row="4"
+                    android:text="Swing Angle"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/Swingangleview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="end"
+                    android:layout_row="4"
+                    android:hint="@string/Swingangle"
+                    android:inputType="number"
+                    />
+                <TextView
+                    android:layout_column="0"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="start"
+                    android:layout_row="5"
+                    android:text="DL Reach"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/DLreachview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="end"
+                    android:layout_row="5"
+                    android:hint="@string/DLreach"
+                    android:inputType="number"
+                    />
+                <TextView
+                    android:layout_column="0"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="start"
+                    android:layout_row="6"
+                    android:text="Tub Width"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/TubWview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="end"
+                    android:layout_row="6"
+                    android:hint="@string/TubW"
+                    android:inputType="number"
+                    />
+                <TextView
+                    android:layout_column="0"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="start"
+                    android:layout_row="7"
+                    android:text="Tub Offset"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/TubOffview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="end"
+                    android:layout_row="7"
+                    android:hint="@string/Tuboff"
+                    android:inputType="number"
+                    />
+                <TextView
+                    android:layout_column="0"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="start"
+                    android:layout_row="8"
+                    android:text="Dump Height"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/DumpHView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="end"
+                    android:layout_row="8"
+                    android:hint="@string/DumpHView"
+                    android:inputType="number"
+                    />
+                <!--             <TextView
+                                    android:text="Dig Depth"
+                                    android:layout_gravity="start"
+                                    android:layout_row="9"
+                                    android:layout_column="0"
+                                    android:layout_columnSpan="1"
+                                    android:textSize="20sp"/>
+
+                                <EditText
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/DigDView"
+                                    android:hint="@string/DigDView"
+                                    android:layout_gravity="end"
+                                    android:layout_column="2"
+                                    android:layout_row="9"
+                                    android:inputType="number"
+                                    />
+
+                -->
+            </GridLayout>
+        </ScrollView>
+    <Button
+        android:id="@+id/dlsize_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:onClick="DLDim_onClick"
+        android:orientation="vertical"
+        android:text="Done" />
+</LinearLayout>

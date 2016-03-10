@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rangediagram="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/helpmenu"
+        android:title="@string/helpmenu"
+        rangediagram:showAsAction="never" />
+</menu>

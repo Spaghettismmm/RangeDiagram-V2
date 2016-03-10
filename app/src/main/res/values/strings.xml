@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DL Range Diagram</string>
+
+    <string name="HWanglestring">Enter HW Angle</string>
+    <string name="SARstring">Enter SAR</string>
+    <string name="PitWidthstring">Enter Pit Width</string>
+    <string name="BenchWidthstring">Enter Chop Width</string>
+    <string name="BenchHeightstring">Enter DL Bench Height</string>
+    <string name="ChopHeightstring">Enter Chop Thickness</string>
+    <string name="DLreach">Enter DL Reach</string>
+    <string name="TubW">Enter DL Tub Width</string>
+    <string name="Tuboff">Enter Tub Offset</string>
+    <string name="DumpHView">Enter Dump Height</string>
+    <string name="DigDView">Enter Dig Depth</string>
+    <string name="SFView">Enter Swell Factor</string>
+    <string name="Swingangle">Change Swing Angle</string>
+
+    <string name="BacktoInput">Change Inputs</string>
+    <string name="action_settings">Change Inputs</string>
+    <string name="draglinedims">Adjust DL Dimensions</string>
+    <string name="listdimensions">List Pit Volumes</string>
+    <string name="adjustrangesettings">Adjust Range Settings</string>
+    <string name="helpmenu">Help!</string>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:clickable="false"
+        android:elevation="4dp"
+        android:padding="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <view xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/draw_canvas_main_activity"
+        class="com.wm.rangediagram.Drawrangeview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TableLayoutResults"
+        android:layout_below="@+id/my_toolbar"
+        android:background="#f1fcfb"
+        custom:drawColor="@color/currentpit"
+        custom:labelColor="#9e0f0f" />
+
+    <TableLayout
+        android:id="@+id/TableLayoutResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_dark"
+        android:backgroundTint="#b1f6dddd"
+        android:columnCount="5"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:useDefaultMargins="true">
+        <!-- SAR-->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_column="0"
+
+                android:layout_gravity="center"
+
+
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Spoil Angle" />
+
+            <TextView
+                android:layout_column="1"
+
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="HW Angle" />
+
+            <TextView
+                android:layout_column="2"
+
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Pit Width" />
+
+            <TextView
+                android:layout_column="3"
+
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+
+                android:text="Chop Width" />
+
+            <TextView
+                android:layout_column="4"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Bench Height" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/Sardrawview"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/HWdrawview"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/PWdrawview"
+                android:layout_column="2"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/BWdrawview"
+                android:layout_column="3"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/BHdrawview"
+                android:layout_column="4"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
